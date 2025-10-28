@@ -1,0 +1,22 @@
+logging:
+  basic:
+    filename: logs/app.log
+    filemode: a
+    format: "%(asctime)s - %(levelname)s - %(message)s"
+    level: DEBUG
+  minor:
+    logging_in_file: True
+
+server:
+  host: 127.0.0.1
+  port: 3000
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: root
+  database: hackaton
+  pool_name: main_pool
+  pool_size: 3
+  pool_reset_session: True
