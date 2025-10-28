@@ -1,0 +1,97 @@
+/* === Блок регистрации === */
+.registration {
+    background-color: #f9fafc;
+    padding: 40px 20px;
+    font-family: "Inter", Arial, sans-serif;
+    color: #222;
+}
+
+.registration__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* === Секции === */
+.registration__section {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 30px 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration__section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* === Заголовки === */
+.registration__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 20px;
+    border-left: 4px solid #3b82f6;
+    padding-left: 10px;
+}
+
+/* === Поля формы === */
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registration__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.registration__label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.registration__input {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registration__input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+/* === Кнопка === */
+.registration__button {
+    margin-top: 10px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.registration__button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.registration__button:active {
+    transform: translateY(0);
+}

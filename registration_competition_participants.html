@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация — Полиатлон Онлайн</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="stylesheet" href="css/registration_competition_participants.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <nav class="nav">
+        <div class="nav__container">
+
+            <!-- Бургер-иконка -->
+            <button class="burger" id="burger" aria-label="Открыть меню">
+                <img class="burger__icon" src="assets/icons/menu-button.svg" alt="Выпадающее меню">
+            </button>
+
+            <!-- Меню -->
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="registration_competition_participants.html" class="nav__link"
+                       id="registerLink">Регистрация</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Инструктаж и загрузка документов</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Результаты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Итоговый протокол соревнований</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Отчёты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Документация</a>
+                </li>
+            </ul>
+
+            <div class="nav_overlay">
+                <button class="nav__button" data-role="organizer">Войти как организатор</button>
+                <button class="nav__button" data-role="judge">Войти как судья</button>
+
+                <div id="profile" class="profile" style="display: none;">
+                    <span id="profileName"></span>
+                    <button id="logoutBtn">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Модальное окно авторизации -->
+    <div id="authForm" class="auth" style="display:none;">
+        <div class="auth__content">
+            <h2 id="authTitle">Вход</h2>
+            <form id="loginForm">
+                <input id="login" type="text" placeholder="Логин" required/>
+                <input id="password" type="password" placeholder="Пароль" required/>
+                <button type="submit">Войти</button>
+            </form>
+            <button id="authClose">Закрыть</button>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="registration">
+    <div class="registration__container">
+
+        <!--Участники-->
+        <section class="registration__section registration__section--athlete">
+            <h2 class="registration__title">Регистрация участников</h2>
+            <form class="registration__form" id="participantForm">
+                <div class="registration__field">
+                    <label class="registration__label" for="second-name">Фамилия</label>
+                    <input class="registration__input" type="text" id="second-name" name="second_name"
+                           placeholder="Иванов" required>
+                </div>
+
+                <div class="registration__field">
+                    <label class="registration__label" for="first-name">Имя</label>
+                    <input class="registration__input" type="text" id="first-name" name="first_name" placeholder="Иван"
+                           required>
+                </div>
+
+                <div class="registration__field">
+                    <label class="registration__label" for="patronymic">Отчество</label>
+                    <input class="registration__input" type="text" id="patronymic" name="patronymic"
+                           placeholder="Иванович" required>
+                </div>
+
+                <div class="registration__field">
+                    <label class="registration__label" for="athlete-age">Возраст</label>
+                    <input class="registration__input" type="number" id="athlete-age" name="age" min="10" max="90"
+                           required>
+                </div>
+
+                <div class="registration__field">
+                    <label class="registration__label" for="athlete-team">Команда</label>
+                    <input class="registration__input" type="text" id="athlete-team" name="name_team"
+                           placeholder="Команда 1">
+                </div>
+
+                <button class="registration__button" type="submit">Зарегистрировать участника</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__brand">
+            <h2 class="footer__brand-title">Полиатлон Онлайн</h2>
+            <p class="footer__brand-desc">
+                Платформа для организации, проведения и оценки соревнований по полиатлону.
+            </p>
+        </div>
+
+        <nav class="footer__nav">
+            <div class="footer__nav-column">
+                <h3 class="footer__nav-title">Соревнования</h3>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="registration_competition_participants.html"
+                           class="footer__nav-link">
+                            Регистрация
+                        </a>
+                    </li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Инструктаж</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Результаты</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Протокол</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav-column">
+                <h3 class="footer__nav-title">Материалы</h3>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Отчёты</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Документация</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новости</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footer__contacts">
+            <p class="footer__contact-item">📞 +7 (999) 999-99-99</p>
+            <p class="footer__contact-item">✉️ info@polyathlon.ru</p>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="footer__legal">
+            <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+            <a href="#" class="footer__legal-link">Пользовательское соглашение</a>
+        </div>
+        <p class="footer__copyright">© 2025 Полиатлон Онлайн. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="scripts/server-request-participant.js"></script>
+</body>
+</html>
