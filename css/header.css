@@ -1,0 +1,140 @@
+/*----HEADER---- */
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 0.6s ease-in-out;
+    font-weight: 600;
+    font-family: Inter, sans-serif, Arial;
+}
+
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*МЕНЮ*/
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    transition: all 0.3s ease;
+}
+
+.nav__link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+    color: #ffffff;
+    transform: scale(1, 0.2);
+}
+
+.nav__item {
+    padding: 0 10px;
+}
+
+/*Кнопки для регистрации*/
+.nav_overlay {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.nav__button {
+    display: inline-block;
+    padding: 0.6rem;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.nav__button:hover {
+    border: 1px solid #ffffff;
+}
+
+/*Поле ввода логина и пароля*/
+.auth__content {
+    width: 300px;
+    height: 400px;
+}
+
+.auth__inputs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auth {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    color: #a8a8a8;
+    z-index: 1000;
+}
+
+.auth input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+}
+
+.auth .nav__button {
+    width: 100%;
+    background: #ababab;
+    color: #111;
+}
+
+.auth__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth__button {
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+    color: #ffffff;
+    background-color: #bdbdbd;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Inter, sans-serif, Arial;
+    transition: 0.4s ease-in-out;
+}
+
+.auth__button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}

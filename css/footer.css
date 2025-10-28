@@ -1,0 +1,177 @@
+/*---- FOOTER ----*/
+.footer {
+    background: #0f1724; /* тёмный, нейтральный фон */
+    color: #e6eef8;     /* лёгкий контрастный текст */
+    font-family: Inter, sans-serif, Arial;
+    padding: 40px 20px;
+}
+
+.footer__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Бренд и краткое описание */
+.footer__brand {
+    min-width: 220px;
+    flex: 1 1 240px;
+}
+
+.footer__brand-title {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+}
+
+.footer__brand-desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #c8d7ea;
+    opacity: 0.95;
+}
+
+.footer__brand-title,
+.footer__brand-desc,
+.footer__nav-title,
+.footer__copyright
+{
+    font-weight: 300;
+    font-family: Montserrat, sans-serif, Arial;
+}
+
+/* Навигация (колонки ссылок) */
+.footer__nav {
+    display: flex;
+    gap: 28px;
+    flex: 2 1 420px;
+    flex-wrap: wrap;
+}
+
+.footer__nav-column {
+    min-width: 140px;
+    flex: 1 1 140px;
+}
+
+.footer__nav-title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #dbe9ff;
+}
+
+.footer__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__nav-item {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.footer__nav-link {
+    color: #b9d1f6;
+    text-decoration: none;
+    transition: color .15s ease, transform .12s ease;
+    display: inline-block;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+    color: #ffffff;
+    transform: translateX(4px);
+    outline: none;
+}
+
+/* Контакты и социальные сети */
+.footer__contacts {
+    min-width: 200px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__contact-item {
+    font-size: 14px;
+    color: #cbdff8;
+    margin: 0;
+}
+
+.footer__social {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+}
+
+.footer__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #e6f2ff;
+    font-size: 16px;
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+    transform: translateY(-3px);
+    /*background: rgba(255,255,255,0.06);*/
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    outline: none;
+}
+
+/* Нижняя строка — легальные ссылки и копирайт */
+.footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.04);
+    margin-top: 28px;
+    padding-top: 18px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__legal {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 13px;
+    color: #99b3d9;
+}
+
+.footer__legal-link {
+    color: #9fc0ff;
+    text-decoration: none;
+}
+
+.footer__legal-link:hover,
+.footer__legal-link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+.footer__copyright {
+    color: #91b0d9;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Стили для доступности */
+.footer a:focus {
+    outline: 3px solid rgba(30,144,255,0.15);
+    outline-offset: 2px;
+}
