@@ -110,7 +110,8 @@ async def registration_participant(request: web.Request) -> web.Response:
         
         return json_response(
             data={
-                "success": True
+                "success": True,
+                "number": number
             },
             status=200
         )
