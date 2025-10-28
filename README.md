@@ -1,17 +1,17 @@
 # hackaton
 
-Установка проекта:
-pip remote add origin https://github.com/AxiuraLeocephala/hackaton
-git pull
+Установка проекта: \n
+pip remote add origin https://github.com/AxiuraLeocephala/hackaton \n
+git pull \n
 
-Подготовка проекта к запуску:
-python -m venv env
-pip install -r requirements.txt
+Подготовка проекта к запуску: \n
+python -m venv env \n
+pip install -r requirements.txt \n
 
 !!! Перед запуском проекта создать схему БД из скрипта (находится в файле "ДАМП БД ЗДЕСЬ")
 
-Запуск проекта:
-python setup.
+Запуск проекта: \n
+python setup.py
 
 Работа с проектом:
 1. открыть файл 
